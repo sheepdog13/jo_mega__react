@@ -1,0 +1,30 @@
+.banner {position: relative;}
+.banner_menu { overflow: hidden; position: absolute; left: 0; top: 20px; width: 100%; height: 100px; z-index: 10;}
+.banner_menu a {color: #fff; font-size: 16px;}
+.banner_menu a:hover {color: #c1c1c1; transition: all 0.3s;}
+.banner_menu .bm_left {float: left;}
+.banner_menu .bm_left ul {padding-top: 7px;}
+.banner_menu .bm_left li { position: relative; display: inline; margin-right: 30px;}
+.banner_menu .bm_left li.total {margin-right: 20px;}
+.banner_menu .bm_left li.total a {font-size: 14px; padding: 3px 10px; display: inline-block; border: 1px solid #fff; transition: all 0.3s;}
+.banner_menu .bm_left li.total a:hover {background: #fff; border-color: #000; color: #000;}
+.banner_menu .bm_right {overflow: hidden; float: right;}
+.banner_menu .bm_right ul {float: left;}
+.banner_menu .bm_right ul:first-child {padding-top: 7px;}
+.banner_menu .bm_right li {position: relative; display: inline; text-align: center; margin-right: 20px;}
+.banner_menu li.line:after {content: ''; width: 1px; height: 14px; background: #fff; position: absolute; right: -18px; top: 2px;}
+.banner_menu .bm_right li.line {margin-right: 30px;}
+.banner_menu .bm_right li.white {margin-right: 10px;}
+.banner_menu .bm_right li.white a {width: 80px; background-color: #fff; color: #3a0e6a; padding: 7px 30px 9px 30px; display: inline-block; border: 1px solid #fff;}
+.banner_menu .bm_right li.purple {margin-right: 0;}
+.banner_menu .bm_right li.purple a {width: 80px; background-color: #3a0e6a; color: #fff; padding: 7px 30px 9px 30px; display: inline-block; border: 1px solid #6e40c4;}
+
+/* 슬라이드 */
+.slider {width: 100%; height: 800px;}
+.slider .ss1 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+.slider .ss2 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+.slider .ss3 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+.slider .swiper-slide h2 {font-size: 62px; color: #fff; line-height: 70px; margin-top: 200px; position: relative; display: inline-block;}
+.slider .swiper-slide h2:after { content: ''; width: 100%; height: 1px; background: rgba(255,255,255,0.3); position: absolute; left: 0; bottom: -35px;}
+.slider .swiper-slide h2 em {display: block; font-size: 59px; font-weight: 100;}
+.slider .swiper-slide p {font-size: 27px; color: #fff; padding-top: 55px;}
