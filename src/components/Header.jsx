@@ -3,9 +3,12 @@ import megalogo from '../img/logo.png'
 import sublogo from '../img/logo-sub.png'
 
 const Header = () => {
-    const lists = ["영화", "큐레이션", "영화관", "특별관", "스토어", "이벤트", "로그인"]
+    const lists = [
+        {id:1, name:"영화"},{id:2, name:"큐레이션"},{id:3, name:"영화관"},{id:4, name:"특별관"},
+        {id:5, name:"스토어"},{id:6, name:"이벤트"},{id:7, name:"로그인"},
+    ]
     const listItems = lists.map((list) => (
-        <li><a href="#">{list}</a></li>
+        <li key={list.id}><a href="#">{list.name}</a></li>
     ));
     return (
         <header className="header">

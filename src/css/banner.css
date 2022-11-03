@@ -20,11 +20,14 @@
 .banner_menu .bm_right li.purple a {width: 80px; background-color: #3a0e6a; color: #fff; padding: 7px 30px 9px 30px; display: inline-block; border: 1px solid #6e40c4;}
 
 /* 슬라이드 */
-.slider {width: 100%; height: 800px;}
-.slider .ss1 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
-.slider .ss2 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
-.slider .ss3 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
-.slider .swiper-slide h2 {font-size: 62px; color: #fff; line-height: 70px; margin-top: 200px; position: relative; display: inline-block;}
-.slider .swiper-slide h2:after { content: ''; width: 100%; height: 1px; background: rgba(255,255,255,0.3); position: absolute; left: 0; bottom: -35px;}
-.slider .swiper-slide h2 em {display: block; font-size: 59px; font-weight: 100;}
-.slider .swiper-slide p {font-size: 27px; color: #fff; padding-top: 55px;}
+
+.slider {width: 100%;}
+.slider .ss1 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover; height: 475px;}
+.slider .ss2 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover; height: 475px;}
+.slider .ss3 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover; height: 475px;}
+.slider h2 {font-size: 62px; color: #fff; line-height: 70px; margin-top: 180px; position: relative; display: inline-block;}
+.slider h2:after { content: ''; width: 100%; height: 1px; background: rgba(255,255,255,0.3); position: absolute; left: 0; bottom: -35px;}
+.slider h2 em {display: block; font-size: 59px; font-weight: 100;}
+.slider p {font-size: 27px; color: #fff; padding-top: 55px;}
+
+.swiper-pagination-bullets {bottom: 20px !important;}
