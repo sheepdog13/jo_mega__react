@@ -5,8 +5,42 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import '../css/customSwiper.css'
 
 const Banner = () => {
+    const contentItems = [
+        {
+            id:1,
+            title:'캡틴 마블',
+            subTitle:'Captain Marvel',
+            content:'새로운 히어로,어벤져스의 희망',
+            imgId: "img1"
+        },
+        {
+            id:2,
+            title:'캡틴 마블',
+            subTitle:'Captain Marvel',
+            content:'새로운 히어로,어벤져스의 희망',
+            imgId: "img2"
+        },
+        {   
+            id:3,
+            title:'캡틴 마블',
+            subTitle:'Captain Marvel',
+            content:'새로운 히어로,어벤져스의 희망',
+            imgId: "img3"
+        },
+    ]
+    const content = contentItems.map((el)=>(
+            <SwiperSlide className={el.imgId} key={el.id}>
+                    <div className="container">
+                        <div className="row">
+                            <h2>{el.title}<em>{el.subTitle}</em></h2>
+                            <p>{el.content}</p>
+                        </div>
+                    </div>
+            </SwiperSlide >
+    ))
     return (  
         <section className="banner">
         <h2 className="ir_so">최신 영화 소식</h2>
@@ -42,30 +76,7 @@ const Banner = () => {
                 navigation
                 pagination={{ clickable: true }}
             >
-            <SwiperSlide className='ss1'>
-                <div className="container">
-                    <div className="row">
-                        <h2>캡틴 마블 <em>Captain Marvel</em></h2>
-                        <p>새로운 히어로,어벤져스의 희망</p>
-                    </div>
-                </div>
-            </SwiperSlide >
-            <SwiperSlide className="ss2">
-                <div className="container">
-                    <div className="row">
-                        <h2>캡틴 마블 <em>Captain Marvel</em></h2>
-                        <p>새로운 히어로,어벤져스의 희망</p>
-                    </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide className="ss3">
-                <div className="container">
-                    <div className="row">
-                        <h2>캡틴 마블 <em>Captain Marvel</em></h2>
-                        <p>새로운 히어로,어벤져스의 희망</p>
-                    </div>
-                </div>
-            </SwiperSlide>   
+                {content}
             </Swiper>
         </div> 
     </section>
