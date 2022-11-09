@@ -1,23 +1,28 @@
 import { useState } from 'react';
 import '../css/movie.css'
+import MovieConent1 from './MovieConent1';
+import MovieConent2 from './MovieConent2';
+import MovieConent3 from './MovieConent3';
+import MovieConent4 from './MovieConent4';
 import MovieConents from './MovieConents';
 
 const Movie = () => {
-    const[isactive,setActive]=useState(false)
     const lists = [
         { id:1, title:"박스오피스", active:"active"},{id:2, title:"최신개봉작"},{id:3, title:"상영예정작",},{ id:4, title:"큐레이션",}
     ]
+    const [content, setContent] = useState();
+
+    const handleClickElement = e => {
+        const { name } = e.target;
+        setContent(name);
+    };
+
     const list = lists.map((el)=>(
-        <li key={el.id} onClick={
-            (e)=>{
-                e.preventDefault();
-                e.target.classList.remove("active")
-                e.target.classList.add("active")
-            }
-        }><a href="#" className={el.active}>{el.title}</a></li>
+        <li key={el.id} onClick={handleClickElement}><a href="#" className={el.active}>{el.title}</a></li>
     ))
+    
     return (
-        <div className="movie" onClick={()=>{setAbc(!isactive)}} style={{display: isactive? "black":"none"}}>
+        <div className="movie">
             <div className="container">
                 <div className="row">
                     <div>
@@ -28,7 +33,12 @@ const Movie = () => {
                             </ul>
                         </div>
                     </div>
-                    <MovieConents/>
+                    <div className="movie_chart">
+                        <MovieConent1 />
+                        <MovieConent2 />
+                        <MovieConent3 />
+                        <MovieConent4 />
+                    </div>
                 </div>
             </div>    
         </div>

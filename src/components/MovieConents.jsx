@@ -26,11 +26,7 @@ const MovieConents = () => {
     ))
     return (  
         <>
-            <div className="movie_chart">
-                <div className="chart_cont">
-                    {movie_charts}
-                </div>
-            </div>
+            {movie_charts}
         </>
     );
 }
