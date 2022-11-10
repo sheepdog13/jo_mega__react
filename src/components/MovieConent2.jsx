@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import MovieConents from "./MovieConents";
+import '../css/movieChart.css'
 
 const MovieConent2 = () => {
     const movies = useSelector((state)=>(state.movieConent2.movies))

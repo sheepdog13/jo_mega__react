@@ -35,9 +35,9 @@ const Movie = () => {
                     </div>
                     <div className="movie_chart">
                         <MovieConent1 />
-                        <MovieConent2 />
+                        {/* <MovieConent2 />
                         <MovieConent3 />
-                        <MovieConent4 />
+                        <MovieConent4 /> */}
                     </div>
                 </div>
             </div>    
