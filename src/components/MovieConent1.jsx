@@ -4,7 +4,7 @@ import '../css/movieChart.css'
 const MovieConent1 = () => {
     const movies = useSelector((state)=>(state.movieConent1.movies))
     const movie_charts = movies.map((movie)=>(
-        <div className={movie.id}>  
+        <div >  
             <div className="poster">
                 <figure>
                     <img src={process.env.PUBLIC_URL + movie.img} alt={movie.title}/>

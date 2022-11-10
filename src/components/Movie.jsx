@@ -8,17 +8,26 @@ import MovieConents from './MovieConents';
 
 const Movie = () => {
     const lists = [
-        { id:1, title:"박스오피스", active:"active"},{id:2, title:"최신개봉작"},{id:3, title:"상영예정작",},{ id:4, title:"큐레이션",}
+        { id:1, title:"박스오피스",name: 'first', text: '1번' },{id:2, title:"최신개봉작",name: 'second', text: '2번'},{id:3, title:"상영예정작",name: 'third', text: '3번'},{ id:4, title:"큐레이션",name: 'fourth', text: '4번'}
     ]
     const [content, setContent] = useState();
 
-    const handleClickElement = e => {
+    const handleClickButton = e => {
         const { name } = e.target;
         setContent(name);
     };
+    
+    useState('first');
 
+    const selectComponent = {
+        first: <MovieConent1 />,
+        second: <MovieConent2 />,
+        third: <MovieConent3 />,
+        fourth: <MovieConent4 />,
+      };
+     
     const list = lists.map((el)=>(
-        <li key={el.id} onClick={handleClickElement}><a href="#" className={el.active}>{el.title}</a></li>
+        <button key={el.id} onClick={handleClickButton} name={el.name}>{el.title}</button>
     ))
     
     return (
@@ -34,15 +43,12 @@ const Movie = () => {
                         </div>
                     </div>
                     <div className="movie_chart">
-                        <MovieConent1 />
-                        {/* <MovieConent2 />
-                        <MovieConent3 />
-                        <MovieConent4 /> */}
+                        {content && <>{selectComponent[content]}</>}
                     </div>
                 </div>
             </div>    
         </div>
     );
 }
- 
+
 export default Movie;
