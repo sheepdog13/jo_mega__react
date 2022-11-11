@@ -1,0 +1,6 @@
+.help {overflow: hidden; padding-bottom: 200px;}
+.help article {float: left; width: 32%; margin-right: 2%; height: 350px;}
+.help article > div {border: 1px solid #dbdbdb; height: 350px;}
+.help article.help_box3 {margin-right: 0;}
+.help article.help_box3 > div {border: 0;}
+.help article h3 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}

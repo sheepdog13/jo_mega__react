@@ -42,17 +42,17 @@ const New = () => {
                         </ul>
                         <div className="select">
                             <div className="s1">
-                                <label for="udate" className="ir_so">날짜</label>
+                                <label className="ir_so">날짜</label>
                                 <input type="text" id="udate" name="udate" defaultValue="2019년 1월 25일" className="ui_select2" />
                             </div>
                             <div className="s2">
-                                <label for="utime" className="ir_so">시간</label>
+                                <label className="ir_so">시간</label>
                                 <select id="utime" name="utime" className="ui_select2">
                                     {timelist}
                                 </select>
                             </div>
                             <div className="s3">
-                                <label for="utext" className="ir_so">주소 또는 도로명을 입력해주세요.</label>
+                                <label className="ir_so">주소 또는 도로명을 입력해주세요.</label>
                                 <input type="text" id="utext" name="utext" className="ui_input3" placeholder="주소 또는 도로명을 입력해주세요." />
                             </div>
                         </div>

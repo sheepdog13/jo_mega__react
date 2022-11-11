@@ -1,10 +1,9 @@
-import { useSelector } from "react-redux";
 import '../css/movieChart.css'
 
-const MovieConent2 = () => {
-    const movies = useSelector((state)=>(state.movieConent2.movies))
+const MovieConent = (props) => {
+    const movies = props.movies;
     const movie_charts = movies.map((movie)=>(
-        <div className={movie.id}>  
+        <div key={movie.id}>  
             <div className="poster">
                 <figure>
                     <img src={process.env.PUBLIC_URL + movie.img} alt={movie.title}/>
@@ -31,4 +30,4 @@ const MovieConent2 = () => {
     );
 }
  
-export default MovieConent2;
+export default MovieConent;

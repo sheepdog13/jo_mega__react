@@ -7,7 +7,7 @@ const Opening = () => {
         {id:3, place:"용인테크노밸리" },
     ]
     const boxlist = boxs.map((box)=>(
-        <div>
+        <div key={box.id}>
             <h3>리뉴얼 오픈</h3>
             <p><em>경기도</em><strong key={box.id}>{box.place}</strong>12월 8일</p>
         </div>

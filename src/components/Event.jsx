@@ -20,7 +20,7 @@ const Event = () => {
                             {eventlist}
                         </div>
                         <div className="event_right">
-                            <img src="/img/event04.jpg" srcset="assets/img/event04@2.jpg 2x" alt="사표 대신 영화표"/>
+                            <img src="/img/event04.jpg" alt="사표 대신 영화표"/>
                         </div>
                     </div>
                 </div>
